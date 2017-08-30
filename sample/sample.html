@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        
+        .header {
+            margin-bottom: 0;
+            border-radius: 0;
+            border: none;
+            background-color: #FFF;
+            border-bottom: solid;
+            border-width: 0.5px;
+            border-bottom-color: #888888
+        }
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        /* Set gray background color and 100% height */
+        /* .sidenav {
+            padding-top: 70px;
+            position: fixed;
+            background-color: #f1f1f1;
+            height: -webkit-fill-available;
+        } */
+        /* Set black background color, white text and some padding */
+        
+        .logo {
+            max-width: 14%;
+        }
+        
+        .body {
+            display: flex;
+        }
+        
+        .navbar {
+            display: flex;
+            float: left;
+            margin: 0;
+            height: 100%;
+            position: relative;
+            height: 800px;
+        }
+        
+        .content {
+            margin-top: -21px;
+        }
+        
+        .navbar-default {
+            border: none;
+        }
+        
+        .nav>li>a {
+            display: block;
+        }
+        
+        #myform {
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        
+        .panel-heading {
+            height: 40px;
+        }
+        
+        nav,
+        article {
+            display: flex;
+        }
+    </style>
+    <script>
+        function showDiv(chk) {
+            var showD = document.getElementById("addrs");
+            console.log(chk);
+            showD.style.display = chk.checked ? "block" : "none";
+        }
+    </script>
+</head>
+
+
+<body>
+    <header>
+
+        <div class="page-header">
+            <h2>
+                <a href="index.html"><img class="logo" src="https://www.microstrategy.com/getmedia/de975ed5-0fc5-491d-905b-4b1216871eb8/Aspire-Logo_Color.png?width=1094&amp;height=528&amp;ext=.png">ASPIRE SYSTEMS</a>
+            </h2>
+
+        </div>
+
+
+    </header>
+    <main class="row content ">
+        <nav class="navbar col-md-2 navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <section>
+                        <h3>my application</h3>
+                        <p>30% Completed</p>
+                    </section>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li><br>
+                    <li><a href="#">Page 1</a></li><br>
+                    <li><a href="#">Page 2</a></li><br>
+                    <li><a href="#">Page 3</a></li><br>
+                </ul>
+
+            </div>
+        </nav>
+        <article>
+            <div class="col-md-10 container  pull-right">
+                <section class="text-center">
+                    <h1>Collapsible Forms</h1>
+                    <p>Sample Page</p>
+                </section>
+                <div class="panel-group" id="myform">
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-center">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#myform" href="#collapse1">
+                                      User Details</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse ">
+                            <div class="panel-body">
+                                <form>
+                                    <div class="form-group row">
+                                        <div class="col-md-6">
+                                            <label for="ex1">first name</label>
+                                            <input class="form-control" id="ex1" type="text">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="ex2">last name</label>
+                                            <input class="form-control" id="ex2" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-12">
+                                            <label for="ex1">Address</label>
+                                            <input class="form-control" id="ex3" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="panel-group" id="subform">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading ">
+                                                <div class="pull-left">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#subform" href="#subcollapse">
+                                                  Co-borrower (optional)</a>
+                                                    </h4>
+                                                </div>
+                                                <div class="pull-right"><a href="#" data-toggle="modal" data-target="#modalDelete"><span class="glyphicon glyphicon-trash"></span>REMOVE</a></div>
+                                            </div>
+                                            <div id="subcollapse" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <div class="form-group row">
+                                                        <div class="col-md-6">
+                                                            <label for="ex1">first name</label>
+                                                            <input class="form-control" id="subex1" type="text">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="ex2">last name</label>
+                                                            <input class="form-control" id="subex2" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="col-md-6">
+                                                            <small>same address as above</small>
+                                                            <input type="checkbox" id="chk" data-toggle="toggle" data-on="yes" data-off="No" data-onstyle="success" data-offstyle="default" onclick="popup()">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row" id="addrs">
+                                                        <div class="col-md-12">
+                                                            <label for="ex1">Address</label>
+                                                            <input class="form-control" id="subex3" type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-center">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#myform" href="#collapse2">
+                                      Form 2</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </main>
+    <div id="modalDelete" class="modal" role="dialog">
+        <div class="modal-dialog modal-sm">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">delete</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Do you want to delete the field</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: .04em;
+    font-family: 'Stag-Sans-medium';
+    color: #999;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+head {
+    display: none;
+}
+
+.login-wrapper,
+.login-block {
+    width: 100%;
+    float: left;
+}
+
+.login-wrapper {
+    margin-top: 0px;
+}
+
+login-masthead {
+    background-color: #f8f8f8;
+    float: left;
+    padding: 2.25% 9.35%;
+    width: 81.3%;
+}
+
+.login-block {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+section {
+    display: block;
+}
+
+.login-block .title {
+    text-align: center;
+    width: 100%;
+    font-family: Stag-Semibold;
+    color: #555;
+    padding-top: 0px;
+    display: block;
+}
+
+.login-block .sepertator {
+    width: 20%;
+    display: none;
+    visibility: hidden;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+
+/* @media (max-width: 1500px) .login-block .title,
+        .sepertator {
+            font-size: 50px;
+        } */
+
+.login-body {
+    background: #ebebeb;
+    width: 100%;
+    float: left;
+    min-height: 420px;
+}
+
+a {
+    cursor: pointer;
+    color: #555;
+    text-decoration: none;
+    outline: none;
+}
+
+.signup-link a {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 2px;
+    width: auto;
+    padding-right: 30px;
+    position: relative;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+/* a, button, input, select {
+    outline: none;
+} */
+
+.signup-link {
+    text-align: center;
+    vertical-align: top;
+    width: auto;
+    display: block;
+    margin: 20px 0 0 0;
+}
+
+.signup-link a:after {
+    background: url(/images/right-arrow.png) no-repeat scroll 0 0 / 60% auto rgba(0, 0, 0, 0);
+    top: 0px;
+    content: "";
+    height: 18px;
+    right: 0;
+    position: absolute;
+    width: 29px;
+    background-position: right center;
+}

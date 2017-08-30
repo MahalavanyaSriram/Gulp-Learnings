@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>canvas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <canvas id="myCanvas" height="500" width="500"></canvas>
+    <a href="test12.html">nav</a>
+
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+
+        ctx.strokeStyle = 'rgb(150,0,0)';
+        ctx.fillStyle = 'rgb(0,150,0)';
+        ctx.lineWidth = 7;
+        ctx.fillRect(50, 50, 100, 100);
+        ctx.strokeRect(50, 50, 100, 100);
+        ctx.clearRect(60, 60, 10, 10);
+        ctx.fillStyle = 'rgb(0,0,0)';
+        ctx.beginPath();
+        ctx.moveTo(75, 75);
+        ctx.lineTo(100, 100);
+        ctx.lineTo(100, 50);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.moveTo(175, 125);
+        ctx.quadraticCurveTo(25, 25, 25, 62.5);
+        ctx.quadraticCurveTo(25, 100, 50, 100);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(30, 30, 25, 25, 2 * 3.14 * 10);
+        ctx.stroke();
+    </script>
+
+</body>
+
+</html>

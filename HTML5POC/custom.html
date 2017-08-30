@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>custom element</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <script>
+        class User extends HTMLElement {
+            constructor() {
+                // Always call super first in constructor
+                super();
+
+                // Create a shadow root
+                var shadow = this.attachShadow({
+                    mode: 'open'
+                });
+
+                // Create a standard img element and set it's attributes.
+                var img = document.createElement('img');
+                img.alt = this.getAttribute('data-name');
+                img.src = this.getAttribute('data-img');
+                img.width = '100';
+                img.height = '100';
+                img.className = 'product-img';
+
+                // Add the image to the shadow root.
+                shadow.appendChild(img);
+
+                // Add an event listener to the image.
+                img.addEventListener('click', () => {
+                    window.location = this.getAttribute('data-url');
+                });
+
+                // Create a link to the product.
+                var link = document.createElement('a');
+                link.innerText = this.getAttribute('data-name');
+                link.href = this.getAttribute('data-url');
+                link.className = 'product-name';
+
+                // Add the link to the shadow root.
+                shadow.appendChild(link);
+            }
+        }
+        // Define the new element
+        customElements.define('x-user', User);
+    </script>
+    <style>
+        body {
+            background: #F7F7F7;
+        }
+        
+        x-user {
+            display: inline-block;
+            float: left;
+            margin: 0.5em;
+            border-radius: 3px;
+            background: #FFF;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+            font-family: Helvetica, arial, sans-serif;
+        }
+        
+        x-user::slotted(.product-img) {
+            cursor: pointer;
+            background: #FFF;
+            margin: 0.5em;
+        }
+        
+        x-user::slotted(.product-name) {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #08C;
+            border-top: 1px solid #EEE;
+            font-weight: bold;
+            padding: 0.75em 0;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Browser does not support custom element</p>
+    <x-user data-name="JAMMIELANISTER" data-img="http://keenthemes.com/preview/metronic/theme/assets/pages/media/profile/profile_user.jpg" data-url="http://userpage.com "></x-user>
+</body>
+
+</html>

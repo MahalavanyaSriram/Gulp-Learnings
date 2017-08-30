@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML5 input </title>
+    <script>
+        function init() {
+            var canvas = document.getElementById('mycanvas');
+
+
+            var ctx = canvas.getContext("2d");
+            canvas.addEventListener("touchstart", draw, false);
+        }
+
+        function draw() {
+
+            coords.innerHTML = 'x: ' + event.touches[0].pageX + ', y: ' + event.touches[0].pageY;
+            ctx.fillRect(event.touches[0].pageX, event.touches[0].pageY, 5, 5);
+
+        }
+    </script>
+
+</head>
+
+<body onload="init()">
+    <canvas id="mycanvas" width="500" height="500">
+      Canvas element not supported.
+    </canvas>
+</body>
+
+</html>
