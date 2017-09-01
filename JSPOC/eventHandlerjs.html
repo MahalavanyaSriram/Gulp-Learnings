@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        // var button = document.querySelector("button");
+
+        // function once() {
+        //     console.log("Done.");
+        //     button.removeEventListener("click", once);
+        // }
+        // button.addEventListener("click", once);
+        addEventListener("keydown", function(event) {
+            if (event.keyCode == 86)
+                document.body.style.background = "violet";
+        });
+        addEventListener("keyup", function(event) {
+            if (event.keyCode == 86)
+                document.body.style.background = "";
+        });
+        var para = document.querySelector("button");
+
+        function isInside(node, target) {
+            for (; node != null; node = node.parentNode)
+                if (node == target) return true;
+        }
+        para.addEventListener("mouseover", function(event) {
+            if (!isInside(event.relatedTarget, para))
+                para.style.color = "red";
+        });
+        para.addEventListener("mouseout", function(event) {
+            if (!isInside(event.relatedTarget, para))
+                para.style.color = "";
+        });
+    </script>
+</head>
+
+<body>
+    <button>Act-once button</button>
+    <p>This page turns violet when you hold the V key and hover to change para color</p>
+
+</body>
+
+</html>

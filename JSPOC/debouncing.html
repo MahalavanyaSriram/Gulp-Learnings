@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <textarea>Type something here...</textarea>
+
+    <script>
+        var textarea = document.querySelector("textarea");
+        var timeout;
+        textarea.addEventListener("keydown", function() {
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+                console.log("You stopped typing.");
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>
