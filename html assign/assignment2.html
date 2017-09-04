@@ -1,0 +1,294 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <title>Employee Form</title>
+    <link rel="stylesheet" type="text/css" href="formStyle.css">
+</head>
+
+<body>
+
+    <form method="get">
+        <fieldset>
+
+            <legend class="main-heading">
+                <h2>
+                    EMPLOYEE DETAILS
+                </h2>
+            </legend>
+
+            <div class="form-header">
+
+                <table class="header-table">
+                    <tr>
+                        <td>
+
+                            All details of the form should be authentic and to be filled in English only.
+
+                        </td>
+
+                        <td>
+                            <label for="language">
+          Language<br>
+              <input type="text" id="language" value = "English" disabled>
+        </label>
+                        </td>
+                    </tr>
+                </table>
+            </div><br>
+            <div class="container">
+                <fieldset>
+                    <legend class="heading">
+                        <h3><strong>
+    Personal Details
+    </strong>
+                        </h3>
+                    </legend>
+
+                    <table class="basic-form-table">
+                        <tr>
+                            <td>
+                                <label class="tooltip">
+          First Name <br>
+              <input type="text" id="firstname" value = "First Name" maxlength ="30"  >
+              <span class="tooltiptext">first name should not exceed 30 characters</span>
+        </label>
+                            </td>
+                            <td>
+
+                                <label class="tooltip">
+          Last Name <br>
+              <input type="text" id="lastname" value= "Last Name" maxlength ="30">
+              <span class="tooltiptext">last name should not exceed 30 characters</span>
+        </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="tooltip">
+          DOB<br>
+        <input type="text" value="yyyy-mm-dd" >
+        <span class="tooltiptext">Dob can contain only numbers and should be in only yyyy-mm-dd format</span>
+        </label>
+                            </td>
+                            <td>
+
+                                <input type="radio" name="radio" value="male" id="mrad"><label for="mrad">Male</label>
+                                <input type="radio" name="radio" value="female" id="frad"><label for="frad">Female</label>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tooltip">
+                                <label for="addrs"> Permanent Address</label><br>
+                                <textarea rows="4" cols="60" id="peraddrs">
+          
+          
+          
+        </textarea>
+                                <span class="tooltiptext">Detailed address to be given</span>
+                            </td>
+                            <td class="tooltip">
+                                <label for="addrs">Temporary Address</label><br>
+                                <textarea rows="4" cols="60" id="tempaddrs">
+                                     
+              
+            </textarea>
+                                <span class="tooltiptext">Detailed address to be given</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="state">
+          State <br>
+             <select id="state">
+        <option>Andhra Pradesh</option>
+        <option>Karnataka</option>
+        <option>Kerala</option>
+        <option>Maharastra</option>
+        <option>Madhya Pradesh</option>
+        <option>TamilNadu</option>
+    </select>
+        </label>
+                            </td>
+                            <td>
+                                <label for="country">
+          Country<br>
+        <input type="text" id="country" name="country" value="India" readonly>
+       </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="tooltip">
+          Mobile<br>
+        <input type="text" id="mobile" value="+91-" maxlength="14" >
+        <span class="tooltiptext">should be a valid mobile number.Can contain only ten character and type should be number only</span>
+        
+        </label>
+                            </td>
+                            <td>
+                                <label class="tooltip">
+          Landline<br>
+        <input type="text" id="landline" value="(044)-2489 8229" maxlength="15" >
+        <span class="tooltiptext">should be a valid landline number.Can contain only 8 character and type should be number only</span>
+        
+        </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label class="tooltip">
+          Email<br>
+        <input type="text" id ="email" value="something@email.com" >
+        <span class="tooltiptext">should be a valid email id</span>
+        </label>
+                            </td>
+                        </tr>
+                    </table>
+
+                </fieldset><br>
+                <fieldset>
+                    <legend class="heading">
+                        <h3><strong>
+    Educational Details
+    
+    </strong>
+                        </h3>
+                    </legend>
+
+                    <table class="edu-form-table">
+                        <thead class="edu-heading">
+                            <tr>
+                                <th class="grade">
+                                    Grade
+                                </th>
+                                <th class="school">
+                                    school/Institution/university
+                                </th>
+                                <th class="board">
+                                    Board
+                                </th>
+                                <th class="degree">Degree</th>
+                                <th class="year">year of passing</th>
+                                <th class="marks">marks</th>
+                            </tr>
+                        </thead>
+                        <tbody class="edu-body">
+                            <tr class="tenth">
+                                <td>
+                                    10<small>th</small>
+                                </td>
+                                <td>
+                                    <input type="text" id="10thsch" class="school">
+                                </td>
+                                <td>
+                                    <input type="text" id="10thboard" class="board">
+                                </td>
+                                <td>
+                                    <input type="text" id="10thdegree" class="degree">
+                                </td>
+                                <td>
+                                    <input type="text" id="10thyear" class="year">
+                                </td>
+                                <td>
+
+                                    <input type="text" id="10thmarks" class="marks">
+                                </td>
+                            </tr>
+                            <tr class="twelveth">
+                                <td>
+                                    12<small>th</small>
+                                </td>
+                                <td>
+                                    <input type="text" id="12thsch" class="school">
+                                </td>
+                                <td>
+                                    <input type="text" id="12thboard" class="board">
+                                </td>
+                                <td>
+                                    <input type="text" id="12thdegree" class="degree">
+                                </td>
+                                <td>
+                                    <input type="text" id="12thyear" class="year">
+                                </td>
+                                <td>
+                                    <input type="text" id="12thmarks" class="marks">
+                                </td>
+                            </tr>
+                            <tr class="ug">
+                                <td>
+                                    UG
+                                </td>
+                                <td>
+                                    <input type="text" id="ugsch" class="school">
+                                </td>
+                                <td>
+                                    <input type="text" id="ugboard" class="board">
+                                </td>
+                                <td>
+                                    <input type="text" id="ugdegree" class="degree">
+                                </td>
+                                <td>
+                                    <input type="text" id="ugyear" class="year">
+                                </td>
+                                <td>
+                                    <input type="text" id="ugmarks" class="marks">
+                                </td>
+                            </tr>
+                            <tr id="pg" class="pg">
+                                <td>
+                                    PG*
+                                </td>
+                                <td>
+                                    <input type="text" id="pgsch" class="school">
+                                </td>
+                                <td>
+                                    <input type="text" id="pgboard" class="board">
+                                </td>
+                                <td>
+                                    <input type="text" id="pgdegree" class="degree">
+                                </td>
+                                <td>
+                                    <input type="text" id="pgyear" class="year">
+                                </td>
+                                <td>
+                                    <input type="text" id="pgmarks" class="marks">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+
+            </div>
+
+            <table class="button-table">
+                <tr>
+                    <td colspan="2">
+                        <input type="image" src="test.jpg" alt="default" width="180" height="100"> <br> Click on the AspireSystems logo for verification
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="agree">&nbsp;&nbsp;<label for="agree"><big>I agree the terms and conditions of the organization</big></label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <button type="reset">Reset</button>
+                    </td>
+
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+
+
+
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>
