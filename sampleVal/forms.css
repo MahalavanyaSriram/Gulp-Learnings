@@ -1,0 +1,76 @@
+/* Styles go here */
+
+.container,
+.container1 {
+    border: 2px solid black;
+    margin: 20px 20px;
+    width: 100%;
+}
+
+#paddress,
+#taddress {
+    border-radius: 10px;
+    width: 350px;
+}
+
+input {
+    height: 20px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+#state {
+    height: 26px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+#mradio {
+    margin: auto;
+    width: 30px;
+}
+
+#fradio {
+    width: 30px;
+}
+
+body {
+    background-color: #5AC3E8;
+}
+
+.tool-tip {
+    display: none;
+    position: float;
+    top: 35px;
+    left: 0px;
+    padding: 5px 8px;
+    background: black;
+    color: red;
+    z-index: 9;
+    font-size: 0.75em;
+    height: 18px;
+    line-height: 18px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.button {
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    margin: auto 10%;
+}
+
+.button1 {
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    margin: -12px 5%;
+}
+
+input:focus {
+    outline: none;
+}
