@@ -7,7 +7,7 @@ table {
 }
 
 td {
-    padding: 10px 10px 10px 10px;
+    padding: 20px 10px 0px 10px;
     /* border: solid; */
 }
 
@@ -61,7 +61,7 @@ select {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -71,12 +71,12 @@ textarea {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
-input[type=submit] {
+#submit {
     width: 30%;
     background-color: #4CAF50;
     color: white;
@@ -88,11 +88,11 @@ input[type=submit] {
     float: right;
 }
 
-input[type=submit]:hover {
+#submit:hover {
     background-color: #45a049;
 }
 
-button {
+#reset {
     width: 30%;
     background-color: #e7e7e7;
     color: black;
@@ -105,54 +105,20 @@ button {
     float: left;
 }
 
-.tooltip {
-    position: relative;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 50%;
-    left: 50%;
-    margin-left: -60px;
-}
-
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-
-.tooltip:focus .tooltiptext {
-    visibility: hidden;
-}
-
 #validEmail,
 #validMobile,
 #validFirstName,
 #validLastName,
-#validDob {
-    height: 10px;
-    margin-top: -21px;
+#validDob,
+#validPerAddrs,
+#validTempAddrs {
+    margin-top: 0px;
+    height: 20px;
+    padding-top: 0px;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     outline: none;
     border-width: 2px;
 }
