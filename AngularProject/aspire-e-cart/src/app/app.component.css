@@ -1,0 +1,41 @@
+.header {
+    position: relative;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: block;
+    zoom: 1;
+    min-width: 1000px;
+    background-color: rgba(221, 221, 221, 0.54);
+    border-bottom: solid;
+    border-width: 0.5px;
+    /* background: url(menu-bg.png) repeat-x; */
+    border-bottom: 2px solid #865597;
+    color: #865597;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 14%;
+    max-width: 14%;
+    float: left;
+}
+
+.heading {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.main {
+    height: 300px;
+}
+
+.footer {
+    background-color: grey;
+}
+.navbar {
+    margin-bottom : 0px;
+    height:70px;
+   
+    border-radius:0px;
+
+}
