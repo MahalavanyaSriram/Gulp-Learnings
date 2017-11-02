@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3">
+      <div class="custom-search">
+        <input #searchBox id="search-box" (keyup)="search(searchBox.value)" type="text" class="search">
+
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button" (click)="searchResult(searchBox.value)">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+
+
+    </div>
+    <!-- /input-group -->
+
+
+  </div>
+  <div>
+    <div *ngFor="let product of products | async" class="search-result">
+      {{product.productName}}
+    </div>
+  </div>
+</div>

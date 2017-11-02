@@ -8,7 +8,7 @@ import { Product } from './product';
 @Injectable()
 export class ProductService {
    private headers = new Headers({'Content-Type': 'application/json'});
-  private url = 'api/products';
+  private url = 'http://localhost:3000/products';
   constructor(private http: Http) { }
   getProducts(): Promise <Product[]> {
   return this.http.get(this.url).toPromise()

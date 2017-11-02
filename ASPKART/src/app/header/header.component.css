@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+.navbar-brand{
+    font-family: 'Covered By Your Grace';
+    font-weight: bold;
+    color: rgb(224, 221, 221);
+        font-size: x-large;
+    padding: 0% 0% 0% 6%;
+  
+}
+.dropdown-menu >li>a{
+    font-weight: bold;
+    
+}
+
+.drop{
+    color: rgb(224, 221, 221);
+    background-color: transparent;
+    font-size: 13px;
+    font-weight: bold;
+      font-family: 'Droid Sans', sans-serif;
+}    
+
+.drop:focus, .drop:hover {
+color: rgb(224, 221, 221);
+border: none;
+color: #79C423;
+transition: none;
+transform: none;
+outline-offset: 0px;
+
+}
+img{
+    width: 27%;
+    height: 100%;
+}
+.row{
+    margin-top: 0.5%;
+}
+.navbar {
+     font-family: 'Droid Sans', sans-serif;
+   font-weight: bold;
+   height: auto;
+   margin: 0px;
+   min-height: 65px;
+    
+}
+
+.nav>li>button {
+    position: relative;
+    display: block;
+        margin-top: 8%;
+}
+.navbar-brand>img {
+display: inline;
+}

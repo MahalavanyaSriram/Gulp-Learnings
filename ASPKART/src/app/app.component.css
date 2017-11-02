@@ -1,0 +1,113 @@
+
+.logo {
+    margin-right: 5px;
+    float: left;
+}
+img{
+    height: 50px;
+    width: 50px;
+}
+.navbar-brand{
+    font-family: 'Covered By Your Grace';font-size: 27px;
+    font-weight: bold;
+    color: rgb(224, 221, 221);
+    
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus{
+    color: #6CC409;
+    background: none;
+}
+
+
+.nav2{
+    float: right;
+    clear: left;
+    margin-top: -40px;
+    font-size: 13px;
+    margin-right: 0px;
+}
+.nav2>.navbar-nav>li>a{
+    display: initial;
+ 
+}
+.nav2>.navbar-nav>li>a:hover ,.nav2>.navbar-nav>li>a:focus{
+    color: #79C423;    
+}
+.nav2>.navbar-nav>li{
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.btn:focus , .btn:hover{
+    outline-offset: 0px;
+    
+}
+.btn-default:hover , .btn-default:focus{
+    border: none;
+    color: #333;
+    background-color: #fff;
+    
+}
+.btn-default{
+    margin-left: 5px;
+}
+
+.drop{
+    color: rgb(224, 221, 221);
+    background-color: transparent;
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.dropdown-menu >li>a{
+    font-weight: bold;
+    
+}
+
+
+.drop:focus, .drop:hover {
+color: rgb(224, 221, 221);
+border:none;
+color: #79C423;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: rgb(224, 221, 221);
+    font-size: 16px;
+}
+.footer-content{
+margin-top: 10px;
+}
+
+footer {
+    font-weight: bold;
+    height: 50px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    vertical-align: center;
+    color: rgb(224, 221, 221);
+    background-color: #222;
+}
+.navbar {
+    margin-bottom : 0px;
+    height:70px;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+   font-weight: bold;
+   font-size: 15px;
+    border-radius:0px;
+    
+}
+
+.link-active{
+    color: #79C423;
+}
+.container-fluid{
+    margin-top: 10px;
+    color: white;
+}
+nav{
+    color: white;
+}
+.main{
+    min-height: 100%;
+    position: relative;
+}

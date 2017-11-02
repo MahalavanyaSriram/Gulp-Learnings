@@ -1,0 +1,396 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "productName": "One Plus 5",
+      "category": "Electronics",
+      "price": 39000,
+      "productMaterial": "steel",
+      "color": "black",
+      "rating": 4.8,
+      "image": "../assets/images/phone.jpg"
+    },
+    {
+      "id": 1,
+      "productName": "Sennheiser Earphones",
+      "category": "Electronics",
+      "price": 799,
+      "productMaterial": "steel",
+      "color": "black",
+      "rating": 4.4,
+      "image": "../assets/images/hp.jpg"
+    },
+    {
+      "id": 2,
+      "productName": "Segate Hard Disc",
+      "category": "Electronics",
+      "price": 3999,
+      "productMaterial": "steel",
+      "color": "black",
+      "rating": 4,
+      "image": "../assets/images/hd.jpg"
+    },
+    {
+      "id": 3,
+      "productName": "Samsung S7 Backcover",
+      "category": "Accessories",
+      "price": 1200,
+      "productMaterial": "rubber",
+      "color": "green",
+      "rating": 3.8,
+      "image": "../assets/images/pc.jpg"
+    },
+    {
+      "id": 4,
+      "productName": "Laptop Sleeve",
+      "category": "Accessories",
+      "price": 899,
+      "productMaterial": "cotton",
+      "color": "blue",
+      "rating": 4.3,
+      "image": "../assets/images/ls.jpg"
+    },
+    {
+      "id": 5,
+      "productName": "Mens Watch ",
+      "category": "Accessories",
+      "price": 6599,
+      "productMaterial": "metal",
+      "color": "silver",
+      "rating": 4.3,
+      "image": "../assets/images/cw.jpg"
+    },
+    {
+      "id": 6,
+      "productName": "Casual Backpack",
+      "category": "Accessories",
+      "price": 1599,
+      "productMaterial": "polyester",
+      "color": "blue",
+      "rating": 4.7,
+      "image": "../assets/images/at.jpg"
+    },
+    {
+      "id": 7,
+      "productName": "Lenovo Ideapad",
+      "category": "Electronics",
+      "price": 36999,
+      "productMaterial": "steel",
+      "color": "black",
+      "rating": 4.03,
+      "image": "../assets/images/lp.jpg"
+    },
+    {
+      "id": 8,
+      "productName": "Canon DSLR",
+      "category": "Electronics",
+      "price": 49000,
+      "productMaterial": "steel",
+      "color": "black",
+      "rating": 4.03,
+      "image": "../assets/images/dslr.jpg"
+    },
+    {
+      "id": 9,
+      "productName": "NB Cricket Bat",
+      "category": "Sports",
+      "price": 39000,
+      "productMaterial": "wood",
+      "color": "orange",
+      "rating": 3.3,
+      "image": "../assets/images/nb.jpg"
+    },
+    {
+      "id": 10,
+      "productName": "Hiking Bag",
+      "category": "Sports",
+      "price": 1199,
+      "productMaterial": "leather",
+      "color": "red",
+      "rating": 4.8,
+      "image": "../assets/images/bg.jpg"
+    },
+    {
+      "id": 11,
+      "productName": "Nivia FootBall Shoes",
+      "category": "Sports",
+      "price": 939,
+      "productMaterial": "leather",
+      "color": "yellow",
+      "rating": 4.03,
+      "image": "../assets/images/sh.jpg"
+    },
+    {
+      "id": 12,
+      "productName": "Mens T-Shirt",
+      "category": "clothing",
+      "price": 379,
+      "productMaterial": "cotton",
+      "color": "olive",
+      "rating": 4.2,
+      "image": "../assets/images/ts.jpg"
+    },
+    {
+      "id": 13,
+      "productName": "Mens Full Sleeve T-Shirt",
+      "category": "clothing",
+      "price": 599,
+      "productMaterial": "cotton",
+      "color": "grey",
+      "rating": 4.1,
+      "image": "../assets/images/fs.jpg"
+    },
+    {
+      "id": 14,
+      "productName": "Mens jeans",
+      "category": "clothing",
+      "price": 799,
+      "productMaterial": "denim",
+      "color": "black",
+      "rating": 4.6,
+      "image": "../assets/images/ds.jpg"
+    },
+    {
+      "id": 15,
+      "productName": "Mens Jerkin",
+      "category": "clothing",
+      "price": 1199,
+      "productMaterial": "cotton",
+      "color": "grey",
+      "rating": 4.6,
+      "image": "../assets/images/sr.jpg"
+    },
+    {
+      "id": 16,
+      "productName": "Saree",
+      "category": "clothing",
+      "price": 799,
+      "productMaterial": "cotton",
+      "color": "pink",
+      "rating": 4.2,
+      "image": "../assets/images/ld.jpg"
+    },
+    {
+      "id": 17,
+      "productName": "Mens Casual Shirt",
+      "category": "clothing",
+      "price": 399,
+      "productMaterial": "cotton",
+      "color": "navy blue",
+      "rating": 4.8,
+      "image": "../assets/images/cs.jpg"
+    },
+    {
+      "id": 18,
+      "productName": "Tempered Glass",
+      "category": "Accessories",
+      "price": 199,
+      "productMaterial": "glass",
+      "color": "white",
+      "rating": 4.8,
+      "image": "../assets/images/tg.jpg"
+    },
+    {
+      "id": 19,
+      "productName": "Dumbells",
+      "category": "Sports",
+      "price": 360,
+      "productMaterial": "metal",
+      "color": "blue",
+      "rating": 4,
+      "image": "../assets/images/sw.jpg"
+    },
+    {
+      "id": 20,
+      "productName": "Mi Redmi Note4",
+      "category": "Electronics",
+      "price": 8999,
+      "productMaterial": "steel",
+      "color": "black",
+      "rating": 4.03,
+      "image": "../assets/images/mi.jpg"
+    },
+    {
+      "id": 21,
+      "productName": "Gloves",
+      "category": "Sports",
+      "price": 666,
+      "productMaterial": "rubber",
+      "color": "black",
+      "rating": 3.7,
+      "image": "../assets/images/gl.jpg"
+    },
+    {
+      "id": 22,
+      "productName": "FootBall",
+      "category": "Sports",
+      "price": 580,
+      "productMaterial": "rubber",
+      "color": "blue",
+      "rating": 3.7,
+      "image": "../assets/images/fb.jpg"
+    },
+    {
+      "id": 23,
+      "productName": "Stiga TT Racket",
+      "category": "Sports",
+      "price": 4890,
+      "productMaterial": "wood",
+      "color": "peach",
+      "rating": 4.7,
+      "image": "../assets/images/st.jpg"
+    },
+    {
+      "id": 24,
+      "productName": "Samsung SD card",
+      "category": "Electronics",
+      "price": 728,
+      "productMaterial": "steel",
+      "color": "red",
+      "rating": 4.03,
+      "image": "../assets/images/sd.jpg"
+    },
+    {
+      "id": 25,
+      "productName": "Perfume",
+      "category": "Beauty",
+      "price": 4890,
+      "productMaterial": "glass",
+      "color": "black",
+      "rating": 4.7,
+      "image": "../assets/images/pf.jpg"
+    },
+    {
+      "id": 26,
+      "productName": "Lipstick",
+      "category": "Beauty",
+      "price": 476,
+      "productMaterial": "NA",
+      "color": "brown",
+      "rating": 2.8,
+      "image": "../assets/images/lip.jpg"
+    },
+    {
+      "id": 27,
+      "productName": "Nail Polish",
+      "category": "Beauty",
+      "price": 950,
+      "productMaterial": "glass",
+      "color": "purple",
+      "rating": 3.8,
+      "image": "../assets/images/np.jpg"
+    },
+    {
+      "id": 28,
+      "productName": "Ayurvedic Facial Kit",
+      "category": "Beauty",
+      "price": 3999,
+      "productMaterial": "glass",
+      "color": "peach",
+      "rating": 4.6,
+      "image": "../assets/images/fk.jpg"
+    },
+    {
+      "id": 29,
+      "productName": "Face wash",
+      "category": "Beauty",
+      "price": 123,
+      "productMaterial": "NA",
+      "color": "brown",
+      "rating": 3.8,
+      "image": "../assets/images/fw.jpg"
+    },
+    {
+      "id": 30,
+      "productName": "Shampoo",
+      "category": "Beauty",
+      "price": 399,
+      "productMaterial": "NA",
+      "color": "red",
+      "rating": 2.8,
+      "image": "../assets/images/sp.jpg"
+    },
+    {
+      "id": 31,
+      "productName": "Eyeliner",
+      "category": "Beauty",
+      "price": 199,
+      "productMaterial": "NA",
+      "color": "black",
+      "rating": 3.8,
+      "image": "../assets/images/kj.jpg"
+    },
+    {
+      "id": 32,
+      "productName": "Over Coat",
+      "category": "clothing",
+      "price": 1399,
+      "productMaterial": "cotton",
+      "color": "gold",
+      "rating": 4.8,
+      "image": "../assets/images/sv.jpg"
+    },
+    {
+      "id": 33,
+      "productName": "Handbag",
+      "category": "Accessories",
+      "price": 1999,
+      "productMaterial": "leather",
+      "color": "black and white",
+      "rating": 4.1,
+      "image": "../assets/images/hb.jpg"
+    },
+    {
+      "id": 34,
+      "productName": "Charger Cable",
+      "category": "Accessories",
+      "price": 399,
+      "productMaterial": "nylon",
+      "color": "silver",
+      "rating": 4.8,
+      "image": "../assets/images/cc.jpg"
+    }
+  ],
+  "category": [
+    "Electronics",
+    "Beauty",
+    "Sports",
+    "clothing",
+    "Accessories"
+  ],
+  "cart": [
+    {
+      "id": 19,
+      "productName": "Dumbells",
+      "category": "Sports",
+      "price": 360,
+      "productMaterial": "metal",
+      "color": "blue",
+      "rating": 4,
+      "image": "../assets/images/sw.jpg",
+      "quantity": 1
+    },
+    {
+      "id": 21,
+      "productName": "Gloves",
+      "category": "Sports",
+      "price": 666,
+      "productMaterial": "rubber",
+      "color": "black",
+      "rating": 3.7,
+      "image": "../assets/images/gl.jpg",
+      "quantity": 1
+    },
+    {
+      "id": 23,
+      "productName": "Stiga TT Racket",
+      "category": "Sports",
+      "price": 4890,
+      "productMaterial": "wood",
+      "color": "peach",
+      "rating": 4.7,
+      "image": "../assets/images/st.jpg",
+      "quantity": 1
+    }
+  ]
+}
