@@ -62,7 +62,7 @@
         "styleExt": "css",
         "component": {},
         "serve": {
-            "host": "localhost"
+            "host": "172.24.145.49"
         }
     }
 }

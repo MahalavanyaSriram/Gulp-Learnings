@@ -38,11 +38,17 @@ export class AuthService {
     this.lock.show();
     
   }
+  public logData:String = "New User";
   public handleAuthentication(): void {
     this.lock.on('authenticated', (authResult) => {
       if (authResult && authResult.accessToken && authResult.idToken) {
         this.setSession(authResult);
-        this.router.navigate(['/products']);
+                this.router.navigate(['/products']);
+                this.lock.getUserInfo(authResult.accessToken, function(error, profile) {
+                  if (!error) {
+                    this.logData = profile.name
+                  }
+                });
       }
     });
     this.lock.on('authorization_error', (err) => {

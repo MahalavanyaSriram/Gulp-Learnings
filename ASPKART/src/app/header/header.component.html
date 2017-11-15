@@ -1,17 +1,17 @@
 <nav class="navbar navbar-inverse  ">
-  <div class="container-fluid row">
-    <div class="navbar-header col-md-2">
+  <div class="container-fluid">
+    <div class="navbar-header">
 
       <a class="navbar-brand">
         <img src="./assets/images/logo.png">ASPKART</a>
     </div>
 
-    <ul class="nav navbar-nav col-md-3 row">
-      <li class="col-md-6">
+    <ul class="nav navbar-nav">
+      <li>
         <a routerLink="/home" routerLinkActive="link-active" [routerLinkActiveOptions]=" { exact: true }">Home</a>
       </li>
 
-      <li class="dropdown col-md-6">
+      <li class="dropdown">
         <button class="btn  dropdown-toggle drop" type="button" data-toggle="dropdown">Shop By Category
           <span class="caret"></span>
         </button>
@@ -25,14 +25,23 @@
         </ul>
       </li>
     </ul>
-    <div class="col-md-5">
-      <app-product-search></app-product-search>
-    </div>
-    <ul class="nav navbar-nav navbar-right col-md-2">
-      <li>
-
-        <a>
-          <i class="fa fa-user"></i>logout</a>
+        <app-product-search></app-product-search>
+   
+       
+ 
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <button class="btn  dropdown-toggle drop" type="button" data-toggle="dropdown">Hello.{{auth.logData}}
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a herf="#" (click)="auth.logout()">logout</a>
+          </li>
+          <li>
+            <a routerLink="/products"></a>
+          </li>
+        </ul>
       </li>
 
       <li>
