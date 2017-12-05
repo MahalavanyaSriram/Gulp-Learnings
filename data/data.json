@@ -360,17 +360,6 @@
   ],
   "cart": [
     {
-      "id": 19,
-      "productName": "Dumbells",
-      "category": "Sports",
-      "price": 360,
-      "productMaterial": "metal",
-      "color": "blue",
-      "rating": 4,
-      "image": "../assets/images/sw.jpg",
-      "quantity": 1
-    },
-    {
       "id": 21,
       "productName": "Gloves",
       "category": "Sports",
@@ -379,17 +368,28 @@
       "color": "black",
       "rating": 3.7,
       "image": "../assets/images/gl.jpg",
+      "quantity": 2
+    },
+    {
+      "id": 11,
+      "productName": "Nivia FootBall Shoes",
+      "category": "Sports",
+      "price": 939,
+      "productMaterial": "leather",
+      "color": "yellow",
+      "rating": 4.03,
+      "image": "../assets/images/sh.jpg",
       "quantity": 1
     },
     {
-      "id": 23,
-      "productName": "Stiga TT Racket",
+      "id": 10,
+      "productName": "Hiking Bag",
       "category": "Sports",
-      "price": 4890,
-      "productMaterial": "wood",
-      "color": "peach",
-      "rating": 4.7,
-      "image": "../assets/images/st.jpg",
+      "price": 1199,
+      "productMaterial": "leather",
+      "color": "red",
+      "rating": 4.8,
+      "image": "../assets/images/bg.jpg",
       "quantity": 1
     }
   ]
